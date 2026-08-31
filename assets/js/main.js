@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>document.querySelectorAll('[data-confirm-delete]').forEach(f=>f.addEventListener('submit',e=>{if(!confirm('Удалить эту публикацию без возможности восстановления?'))e.preventDefault()})));

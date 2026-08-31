@@ -1,0 +1,1 @@
+</main><footer class="site-footer"><strong><?=e(APP_NAME)?></strong><p>Онлайн-газета с ретро-комиксной эстетикой.</p><div class="footer-rule"></div><p>© <?=date('Y')?>. Редакционный проект.</p></footer></div><script src="<?=e(url('assets/js/main.js'))?>"></script></body></html>
