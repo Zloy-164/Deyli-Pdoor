@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 session_start();
 
-define('APP_NAME', 'Deyli-Pdoor');
+define('APP_NAME', 'The Deyli-Pdoor');
 // update name
 define('BASE_URL', getenv('BASE_URL') ?: '');
 
