@@ -2,6 +2,7 @@
 set -eu
 
 PERSISTENT_UPLOAD_DIR="${UPLOAD_DIR:-/data/uploads}"
+APP_PORT="${PORT:-80}"
 
 mkdir -p "$PERSISTENT_UPLOAD_DIR"
 
@@ -15,8 +16,8 @@ if [ -e /var/www/html/uploads ] && [ ! -L /var/www/html/uploads ]; then
 fi
 
 ln -sfn "$PERSISTENT_UPLOAD_DIR" /var/www/html/uploads
-chown -R www-data:www-data "$PERSISTENT_UPLOAD_DIR" || true
 
 php /var/www/html/scripts/init_db.php
 
-exec apache2-foreground
+echo "Starting PHP server on 0.0.0.0:${APP_PORT}"
+exec php -S "0.0.0.0:${APP_PORT}" -t /var/www/html
