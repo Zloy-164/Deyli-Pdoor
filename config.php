@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 session_start();
 
-define('APP_NAME', getenv('APP_NAME') ?: 'The Daily Panel');
+define('APP_NAME', getenv('APP_NAME') ?: 'The Deyli-Pdoor');
 define('BASE_URL', getenv('BASE_URL') ?: '');
 
 define('DB_HOST', getenv('DB_HOST') ?: getenv('MYSQLHOST') ?: 'localhost');
