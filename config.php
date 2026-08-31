@@ -3,7 +3,8 @@ declare(strict_types=1);
 
 session_start();
 
-define('APP_NAME', 'Deyli-Pdoor-TEST');
+define('APP_NAME', 'Deyli-Pdoor');
+// update name
 define('BASE_URL', getenv('BASE_URL') ?: '');
 
 define('DB_HOST', getenv('DB_HOST') ?: getenv('MYSQLHOST') ?: 'localhost');
